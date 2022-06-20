@@ -1,0 +1,150 @@
+html {
+    font-family: 'Esteban', serif;
+    font-size: 16px;
+    background-color: #ca6101;
+    margin: 2rem;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding-top: 12rem;
+    text-shadow: .25rem .2rem #729dba;
+}
+
+h3 {
+    font-size: 1.35rem;
+}
+
+h4, li {
+    font-size: 1.15rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #729dba;
+    padding: .25rem .35rem;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#menu li {
+    list-style: none;
+}
+
+#banner {
+    height: 35rem;
+    width: 100%;
+    background-image: url("./resources/bluebird.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 60% auto;
+}
+
+#about, #program, #sight {
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    background-color: #c18c64;
+    border-radius: .75rem;
+}
+
+#testimonial {
+    padding: .5rem;
+}
+
+#quote {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: .1rem .1rem #729dba;
+}
+
+#name {
+    text-align: right;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.imgcard {
+    flex: 1;
+    text-align: center;
+}
+
+img {
+    border-radius: .75rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width:480px) {
+    html {
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        padding-top: 2rem;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    #banner {
+        height: auto;
+        background-position: top right;
+        background-size: 40% auto;
+    }
+
+    #quote {
+        font-size: 1rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 2rem;
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width: 1024px) {
+    h1 {
+        padding-top: 2rem;
+    }
+}
+
+@media only screen and (min-height: 801px) {
+   #banner {
+        height: auto;
+        background-image: none;
+   }
+   
+    .container {
+        flex-wrap: wrap;
+    }
+}
+
